@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مقایسه‌ی ویرا ۲٫۲</title>
+  <style>
+    @font-face{font-family:ViraCurrent;src:url(data:font/woff2;base64,@CURRENT@) format("woff2");font-weight:100 900;ascent-override:89.84375%;descent-override:41.796875%;line-gap-override:0%}
+    @font-face{font-family:ViraFaNum;src:url(data:font/woff2;base64,@FANUM@) format("woff2");font-weight:100 900;ascent-override:89.84375%;descent-override:41.796875%;line-gap-override:0%}
+    @font-face{font-family:ViraOriginal;src:url(data:font/woff2;base64,@ORIGINAL@) format("woff2");font-weight:100 900;ascent-override:89.84375%;descent-override:41.796875%;line-gap-override:0%}
+    @font-face{font-family:VazirmatnComparison;src:url(data:font/woff2;base64,@VAZIRMATN@) format("woff2");font-weight:100 900;ascent-override:89.84375%;descent-override:41.796875%;line-gap-override:0%}
+    @font-face{font-family:SegoeComparison;src:local("Segoe UI"),local("SegoeUI");font-weight:400;ascent-override:89.84375%;descent-override:41.796875%;line-gap-override:0%}
+    @font-face{font-family:SegoeComparison;src:local("Segoe UI Semibold"),local("SegoeUI-Semibold");font-weight:600;ascent-override:89.84375%;descent-override:41.796875%;line-gap-override:0%}
+    @font-face{font-family:TahomaComparison;src:local("Tahoma");font-weight:400;ascent-override:89.84375%;descent-override:41.796875%;line-gap-override:0%}
+    @font-face{font-family:TahomaComparison;src:local("Tahoma Bold"),local("Tahoma-Bold");font-weight:700;ascent-override:89.84375%;descent-override:41.796875%;line-gap-override:0%}
+    @font-face{font-family:ArialComparison;src:local("Arial"),local("ArialMT");font-weight:400;ascent-override:89.84375%;descent-override:41.796875%;line-gap-override:0%}
+    @font-face{font-family:ArialComparison;src:local("Arial Bold"),local("Arial-BoldMT");font-weight:700;ascent-override:89.84375%;descent-override:41.796875%;line-gap-override:0%}
+    @font-face{font-family:CalibriComparison;src:local("Calibri");font-weight:400;ascent-override:89.84375%;descent-override:41.796875%;line-gap-override:0%}
+    @font-face{font-family:CalibriComparison;src:local("Calibri Bold"),local("Calibri-Bold");font-weight:700;ascent-override:89.84375%;descent-override:41.796875%;line-gap-override:0%}
+    :root{color-scheme:light;color:#151515;background:#fff;--rule:#d4d4d4;--muted:#525252}
+    *{box-sizing:border-box}
+    body{margin:0;font:400 15px/1.65 ViraCurrent,system-ui,sans-serif}
+    main{--size:14px;--weight:400;--line:calc(var(--size)*1.72);width:min(100% - 24px,1260px);margin:auto;padding:clamp(20px,3vw,40px) 0}
+    h1,p{margin:0}h1{font-size:clamp(28px,4vw,43px);line-height:1.25;font-weight:720}
+    .intro,.notice{color:var(--muted);margin-block:6px 15px}
+    .controls{display:flex;flex-wrap:wrap;gap:8px 20px;margin-block:12px}
+    label{display:flex;align-items:center;gap:8px}
+    select,textarea,button{font:inherit;color:inherit;border:1px solid #a5a5a5;border-radius:5px;background:#fff}
+    select{min-height:40px;padding:4px 9px}
+    button{min-height:40px;padding:4px 9px;cursor:pointer}
+    button:hover{background:#f4f4f4}
+    :focus-visible{outline:2px solid #151515;outline-offset:2px}
+    .edit{display:block;margin-block:10px 13px}
+    textarea{display:block;width:100%;min-height:57px;padding:7px 9px;margin-top:4px;resize:vertical}
+    .comparison{overflow-x:auto}
+    #proof{min-width:1000px}
+    .row{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-block-end:1px solid var(--rule)}
+    .row>div{min-width:0;padding:9px clamp(5px,1vw,14px)}
+    .row>div+div{border-inline-start:1px solid var(--rule)}
+    .header{border-block-start:1px solid var(--rule);font-weight:620}
+    .header select{width:100%}
+    .header p,.header button{font-size:13px}
+    .reference-status{color:var(--muted);overflow-wrap:anywhere;margin-block:5px}
+    .file-actions{display:flex;flex-wrap:wrap;gap:5px}
+    .current{--font:ViraCurrent}
+    .sample{font:var(--sample-weight,var(--weight)) var(--size)/var(--line) var(--font),system-ui,sans-serif;font-synthesis:none;overflow-wrap:anywhere}
+    .sample bdi{font:inherit}
+    .custom{white-space:pre-wrap}
+    .sample[data-unavailable]{visibility:hidden}
+    [hidden]{display:none!important}
+    details{margin-block:19px 0;border-block:1px solid var(--rule);padding-block:9px}
+    summary{cursor:pointer;font-weight:620;min-height:40px;padding-block:5px}
+    .capture{direction:ltr;overflow-x:auto;margin-block:7px}
+    .capture img{display:block;width:1164px;height:220px}
+    @media(max-width:440px){main{width:calc(100% - 14px)}.header>div{font-size:12px}}
+  </style>
+</head>
+<body>
+<main id="page">
+  <h1>مقایسه‌ی ویرا ۲٫۲</h1>
+  <p class="intro">برای مقایسه زوم مرورگر را روی ۱۰۰٪ بگذارید.</p>
+  <section class="controls" aria-label="تنظیمات مقایسه">
+    <label>اندازه <select id="size"><option value="14" selected>۱۴ پیکسل</option><option value="16">۱۶ پیکسل</option></select></label>
+    <label>وزن <select id="weight"><option value="400" selected>۴۰۰</option><option value="600">۶۰۰</option></select></label>
+  </section>
+  <label class="edit">متن دلخواه
+    <textarea id="editor" dir="auto" maxlength="600" placeholder="متنی برای مقایسه بنویسید"></textarea>
+  </label>
+  <p class="notice" id="scroll-note" hidden>برای دیدن همه‌ی ستون‌ها، جدول را افقی پیمایش کنید.</p>
+  <div class="comparison" id="comparison" role="region" aria-label="نمونه‌های مقایسه‌ی فونت" tabindex="0">
+    <div id="proof" role="table" aria-label="مقایسه‌ی پنج فونت">
+      <div class="row header" role="row">
+        <div role="columnheader">ویرا ۲٫۲</div>
+      </div>
+    </div>
+  </div>
+  <input id="font-file" type="file" accept=".woff2,.woff,.ttf,.otf" hidden>
+  <details>
+    <summary>رندر ثبت‌شده با ClearType در ویندوز</summary>
+    <p class="notice">تصویر در اندازه‌ی ثبت‌شده نمایش داده می‌شود. در پنجره‌ی باریک می‌توانید تصویر را افقی پیمایش کنید.</p>
+    <div class="capture"><img id="capture" width="1164" height="220" alt="رندر آزمایش در ویندوز. از چپ Segoe UI، ویرا ۲٫۰ و ویرا ۲٫۱."></div>
+  </details>
+</main>
+<template id="reference-header">
+  <div role="columnheader">
+    <select></select>
+    <p class="reference-status" role="status" hidden></p>
+    <div class="file-actions" hidden>
+      <button type="button" class="file-variable">فایل متغیر</button>
+      <button type="button" class="file-weight"></button>
+    </div>
+  </div>
+</template>
+<template id="examples">
+  <p>ه، م، ا، ب، ی، ن، گ</p>
+  <p>همهمه، مبلغ سفارش، کارگاه، گزارش</p>
+  <p>پنجره، گزینه، سفارش تازه، پرداخت‌شده</p>
+  <p>کد سفارش ۲۴۸ آماده‌ی ارسال است.</p>
+  <p>گزارش فروش <bdi dir="ltr" lang="en">Sales Report</bdi></p>
+  <p>اشتراک <bdi dir="ltr" lang="en">Pro</bdi> · <bdi dir="ltr" lang="en">ORDER-248</bdi></p>
+  <p>۴۸۵٬۰۰۰ تومان · <bdi dir="ltr" lang="en">485,000</bdi></p>
+  <p dir="ltr">0123456789 · ۰۱۲۳۴۵۶۷۸۹ · ٠١٢٣٤٥٦٧٨٩</p>
+  <p dir="ltr" lang="en">Settings · Profile · Transfer complete</p>
+  <p dir="ltr" lang="en">5 files changed +105 -229</p>
+</template>
+<script>
+  const captures = {
+    "14-400":"@CAP14_400@",
+    "14-600":"@CAP14_600@",
+    "16-400":"@CAP16_400@",
+    "16-600":"@CAP16_600@"
+  };
+  const page = document.getElementById("page");
+  const proof = document.getElementById("proof");
+  const editor = document.getElementById("editor");
+  const size = document.getElementById("size");
+  const weight = document.getElementById("weight");
+  const capture = document.getElementById("capture");
+  const comparison = document.getElementById("comparison");
+  const scrollNote = document.getElementById("scroll-note");
+  const fileInput = document.getElementById("font-file");
+  const choices = {
+    VazirmatnComparison:{name:"وزیرمتن"},
+    ViraFaNum:{name:"ویرا اعداد فارسی"},
+    IranSans:{name:"ایران‌سنس",local:{
+      variable:["IRANSansXVF-ThinUIFixed","IRANSansXVF Thin UI Fixed","IRANSansXVF UI Fixed","IRANSansXVF","IRANSansXV","IRANSansXV-Thin"],
+      400:["IRANSansX-Regular","IRANSansX Regular","IRANSans-Regular","IRANSans Regular","IRANSans"],
+      600:["IRANSansX-DemiBold","IRANSansX DemiBold","IRANSansX-SemiBold","IRANSans-SemiBold"]
+    }},
+    YekanBakh:{name:"یکان‌بخ",local:{
+      variable:["YekanBakhVF","YekanBakh-VF","YekanBakh VF","YekanBakh-VF-Thin","YekanBakh VF Thin"],
+      400:["YekanBakh-Regular","Yekan Bakh Regular","YekanBakhFaNum-Regular","YekanBakh-RegularFaNum"],
+      600:["YekanBakh-SemiBold","Yekan Bakh SemiBold","YekanBakhFaNum-SemiBold"]
+    }},
+    Dana:{name:"دانا",local:{
+      variable:["DanaVF","Dana-VF","Dana VF","DanaVF-Thin","Dana VF Thin","Dana-FaNum-VF"],
+      400:["Dana-Regular","Dana Regular","DanaFaNum-Regular"],
+      600:["Dana-DemiBold","Dana DemiBold","Dana-SemiBold","DanaFaNum-DemiBold"]
+    }},
+    SegoeComparison:{name:"Segoe UI"},
+    TahomaComparison:{name:"Tahoma",bold:"700"},
+    ArialComparison:{name:"Arial",bold:"700"},
+    CalibriComparison:{name:"Calibri",bold:"700"},
+    ViraOriginal:{name:"ویرا ۲٫۰"}
+  };
+  const format = new Intl.NumberFormat("fa-IR",{useGrouping:false});
+  const metrics = {ascentOverride:"89.84375%",descentOverride:"41.796875%",lineGapOverride:"0%"};
+  const chosenFiles = new Map();
+  const fileErrors = new Map();
+  const localFaces = new Map();
+  let fileTarget;
+  let fileSerial = 0;
+  let request = 0;
+  const references = ["VazirmatnComparison","IranSans","YekanBakh","Dana"].map((family,index)=>{
+    const header = document.getElementById("reference-header").content.firstElementChild.cloneNode(true);
+    const picker = header.querySelector("select");
+    picker.id = "reference-"+(index+1);
+    picker.setAttribute("aria-label","فونت ستون "+format.format(index+2));
+    for (const [value,font] of Object.entries(choices)) picker.add(new Option(font.name,value));
+    picker.value = family;
+    picker.addEventListener("change",syncSettings);
+    proof.querySelector(".header").append(header);
+    const variableButton = header.querySelector(".file-variable");
+    const weightButton = header.querySelector(".file-weight");
+    for (const button of [variableButton,weightButton]) {
+      button.addEventListener("click",()=>{
+        fileTarget = {family:picker.value,key:button===variableButton ? "variable" : weight.value};
+        fileInput.value = "";
+        fileInput.click();
+      });
+    }
+    return {picker,variableButton,weightButton,actions:header.querySelector(".file-actions"),
+      status:header.querySelector(".reference-status"),samples:[]};
+  });
+
+  function addRow(content) {
+    const row = document.createElement("div");
+    row.className = "row";
+    row.setAttribute("role","row");
+    for (const reference of [null,...references]) {
+      const cell = document.createElement("div");
+      const copy = content.cloneNode(true);
+      cell.setAttribute("role","cell");
+      if (reference) {
+        copy.dataset.unavailable = "";
+        reference.samples.push(copy);
+      } else cell.className = "current";
+      copy.classList.add("sample");
+      cell.append(copy);
+      row.append(cell);
+    }
+    proof.append(row);
+    return row;
+  }
+  for (const example of document.getElementById("examples").content.children) addRow(example);
+  const line = document.createElement("p");
+  line.dir = "auto";
+  line.className = "custom";
+  const typed = addRow(line);
+
+  function syncText() {
+    for (const sample of typed.querySelectorAll(".sample")) sample.textContent = editor.value;
+    typed.hidden = !editor.value.trim();
+  }
+
+  function localFace(family,key,names) {
+    const alias = family+"Local"+key;
+    if (!localFaces.has(alias)) {
+      const source = names.map(name=>"local("+JSON.stringify(name)+")").join(",");
+      const face = new FontFace(alias,source,{...metrics,weight:key==="variable" ? "100 900" : key});
+      localFaces.set(alias,face.load().then(loaded=>{
+        document.fonts.add(loaded);
+        return alias;
+      },()=>null));
+    }
+    return localFaces.get(alias);
+  }
+
+  async function getReference(family,selected,actualWeight) {
+    if (selected.local) {
+      const key = family+actualWeight;
+      const exact = chosenFiles.get(key);
+      const variable = chosenFiles.get(family+"variable");
+      const supplied = exact?.face ? exact : variable?.face ? variable : null;
+      const error = fileErrors.get(family);
+      if (supplied) return {family:supplied.face.family,status:error || "فایل "+supplied.name};
+      const installed = await localFace(family,"variable",selected.local.variable)
+        || await localFace(family,actualWeight,selected.local[actualWeight]);
+      if (installed) {
+        const edition = family==="IranSans" && installed.endsWith("variable") ? " · ایران‌سنس ایکس" : "";
+        return {family:installed,status:error || "نسخه‌ی نصب‌شده"+edition};
+      }
+      return {status:error || "برای نمایش، فایل فونت را انتخاب کنید."};
+    }
+    try {
+      const faces = await document.fonts.load(actualWeight+" "+size.value+"px "+family,"همهمه Order");
+      if (faces.some(face=>face.status==="loaded")) {
+        return {family,status:actualWeight==="700" ? "وزن ۷۰۰" : ""};
+      }
+    } catch {}
+    return {status:"فونت نصب‌شده در مرورگر پیدا نشد."};
+  }
+
+  async function syncSettings() {
+    const current = ++request;
+    const requestedWeight = weight.value;
+    page.style.setProperty("--size",size.value+"px");
+    page.style.setProperty("--weight",requestedWeight);
+    capture.src = "data:image/png;base64,"+captures[size.value+"-"+requestedWeight];
+    const selectedFamilies = references.map(reference=>reference.picker.value);
+    for (const [index,reference] of references.entries()) {
+      const selected = choices[selectedFamilies[index]];
+      for (const option of reference.picker.options) {
+        option.disabled = selectedFamilies.some((family,slot)=>family===option.value && slot!==index);
+      }
+      reference.actions.hidden = !selected.local;
+      reference.variableButton.setAttribute("aria-label","فایل متغیر "+selected.name);
+      const weightLabel = "فایل وزن "+format.format(requestedWeight);
+      reference.weightButton.textContent = weightLabel;
+      reference.weightButton.setAttribute("aria-label",weightLabel+" "+selected.name);
+    }
+    await Promise.all(references.map(async (reference,index)=>{
+      const family = selectedFamilies[index];
+      const selected = choices[family];
+      const actualWeight = requestedWeight==="600" && selected.bold ? selected.bold : requestedWeight;
+      for (const sample of reference.samples) sample.dataset.unavailable = "";
+      const result = await getReference(family,selected,actualWeight);
+      if (current!==request) return;
+      reference.status.textContent = result.status;
+      reference.status.hidden = !result.status;
+      for (const sample of reference.samples) {
+        sample.style.setProperty("--font",result.family || "");
+        sample.style.setProperty("--sample-weight",actualWeight);
+        sample.toggleAttribute("data-unavailable",!result.family);
+      }
+    }));
+  }
+
+  fileInput.addEventListener("change",async ()=>{
+    const file = fileInput.files[0];
+    if (!file) return;
+    const {family,key} = fileTarget;
+    const id = family+key;
+    const previous = chosenFiles.get(id);
+    const pending = {...previous};
+    fileErrors.delete(family);
+    chosenFiles.set(id,pending);
+    try {
+      const face = new FontFace(family+"File"+(++fileSerial),await file.arrayBuffer(),
+        {...metrics,weight:key==="variable" ? "100 900" : key});
+      await face.load();
+      if (chosenFiles.get(id)!==pending) return;
+      if (pending.face) document.fonts.delete(pending.face);
+      document.fonts.add(face);
+      chosenFiles.set(id,{face,name:file.name});
+      fileErrors.delete(family);
+    } catch {
+      if (chosenFiles.get(id)!==pending) return;
+      fileErrors.set(family,"فایل باز نشد. یک فایل WOFF2، WOFF، TTF یا OTF انتخاب کنید.");
+    }
+    syncSettings();
+  });
+  editor.addEventListener("input",syncText);
+  size.addEventListener("change",syncSettings);
+  weight.addEventListener("change",syncSettings);
+  new ResizeObserver(()=>{
+    scrollNote.hidden = comparison.scrollWidth===comparison.clientWidth;
+  }).observe(comparison);
+  syncText();
+  syncSettings();
+</script>
+</body>
+</html>

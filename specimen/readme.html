@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ویرا ۲٫۲ — نمونه‌ی رابط کاربری</title>
+  <link rel="stylesheet" href="../fonts/web/variable.css">
+  <style>
+    @font-face{font-family:Vazirmatn;src:url("assets/Vazirmatn-33.003.woff2") format("woff2");font-weight:100 900}
+    :root{font-family:Vira,sans-serif;color:#191e1b;background:#e9ece6;font-synthesis:none}
+    *{box-sizing:border-box}
+    body{margin:0}
+    main{width:min(100%,1200px);margin:auto;padding:48px}
+    h1,h2,h3,p{margin:0}
+    .hero{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:32px}
+    .hero h1{font-size:88px;font-weight:700;line-height:1}
+    .hero p{font-size:16px;color:#3a4b40;margin-top:12px}
+    .version{font-size:16px;color:#3a4b40;font-weight:600}
+    .grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:20px}
+    .panel{border-radius:20px;background:#fff;padding:24px;border:1px solid #cfd6cc}
+    .orders{background:#18372b;border-color:#18372b;color:#fff}
+    .orders header{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:12px}
+    .orders header p{font-size:14px;color:#d4e9d9}
+    .orders h2,.proof h2{font-size:22px;font-weight:650;line-height:1.4}
+    .total{font:650 42px/1.25 "Vira FaNum",sans-serif;margin-block:6px 16px;font-variant-numeric:tabular-nums}
+    .total small{font:400 14px Vira,sans-serif;color:#d4e9d9}
+    .order{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-top:1px solid #547162;font-size:14px;align-items:center}
+    .order strong{font-weight:600;display:block}
+    .order bdi{color:#d4e9d9}
+    .tag{background:#d8efdc;color:#163724;border-radius:99px;padding:3px 9px;white-space:nowrap;font-weight:600}
+    .proof table{border-collapse:collapse;width:100%;margin-block:12px 8px;table-layout:fixed}
+    .proof th,.proof td{text-align:start;vertical-align:top;border-bottom:1px solid #dce4d9;padding:9px 0 9px 8px}
+    .proof th{font-size:13px;font-weight:600;color:#344a3c}
+    .proof td{font-size:14px;line-height:1.65}
+    .proof tr.medium td{font-size:16px;font-weight:600}
+    .proof td:nth-child(2){font-family:Vazirmatn,sans-serif}
+    .proof th:last-child,.proof td:last-child{width:80px;color:#344a3c}
+    .digits{display:flex;justify-content:space-between;gap:10px;margin-top:15px;font-size:14px}
+    .digits bdi{font-variant-numeric:tabular-nums}
+    .fanum{font-family:"Vira FaNum",sans-serif}
+    @media(max-width:760px){main{padding:24px}.grid{grid-template-columns:1fr}.hero h1{font-size:64px}}
+  </style>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <div><h1>ویرا</h1><p>فونت فارسی و لاتین برای رابط کاربری</p></div>
+      <bdi class="version" lang="en">Vira 2.2 · 100–900</bdi>
+    </header>
+    <div class="grid">
+      <section class="panel orders" aria-label="نمونه‌ی رابط کاربری">
+        <header><h2>گزارش فروش</h2><p>امروز، ۴ آذر</p></header>
+        <p class="total"><bdi dir="ltr">۴۸۵٬۰۰۰</bdi> <small>تومان</small></p>
+        <div class="order">
+          <div><strong>اشتراک حرفه‌ای</strong><bdi lang="en">ORDER-248</bdi></div>
+          <span class="tag">پرداخت شد</span>
+        </div>
+        <div class="order">
+          <div><strong>سفارش تازه</strong><bdi lang="en">ORDER-259</bdi></div>
+          <span>آماده‌ی ارسال</span>
+        </div>
+      </section>
+      <section class="panel proof" aria-label="مقایسه‌ی ویرا و وزیرمتن">
+        <h2>مقایسه با وزیرمتن</h2>
+        <table>
+          <thead><tr><th>ویرا ۲٫۲</th><th>وزیرمتن ۳۳٫۰۰۳</th><th>اندازه / وزن</th></tr></thead>
+          <tbody>
+            <tr><td>پنجره، همه، مبلغ سفارش<br><bdi lang="en">Sales report · 485,000</bdi></td><td>پنجره، همه، مبلغ سفارش<br><bdi lang="en">Sales report · 485,000</bdi></td><td>۱۴ / ۴۰۰</td></tr>
+            <tr class="medium"><td>پرداخت انجام شد<br><bdi lang="en">ORDER-248</bdi></td><td>پرداخت انجام شد<br><bdi lang="en">ORDER-248</bdi></td><td>۱۶ / ۶۰۰</td></tr>
+          </tbody>
+        </table>
+        <div class="digits">
+          <p>استاندارد <bdi dir="ltr">0123456789</bdi></p>
+          <p>اعداد فارسی <bdi class="fanum" dir="ltr">0123456789</bdi></p>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

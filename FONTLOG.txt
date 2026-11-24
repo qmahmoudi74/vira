@@ -1,0 +1,19 @@
+Vira font log
+
+Vira is a modified version of Vazirmatn 33.003 by Saber Rastikerdar and
+the Vazirmatn project authors. See OFL.txt and licenses/NOTICE.txt.
+
+2.2.0
+- Released nine static weights per family, from 100 to 900.
+- Added the separately named Vira FaNum family. Its Unicode character map
+  displays ASCII and Arabic-Indic decimal digits using Persian digit glyphs.
+- Added desktop TTF, web WOFF2 and CSS, install guides, and a reproducible build.
+- The standard variable family retains the Vira 2.1 geometry and weight axis.
+
+2.1
+- Added TrueType instructions targeted at 14 and 16 physical pixels.
+- Kept Vira as the installed family name.
+
+2.0
+- Refined the outlines of Persian heh and meem and spacing for mixed-script text.
+- Refined Persian numeral spacing and added an explicit 600-weight master.
