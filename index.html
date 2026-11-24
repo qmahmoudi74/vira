@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f5ef">
+  <meta name="description" content="ویرا، فونت فارسی و لاتین برای رابط کاربری. نمونه‌ها را مقایسه کنید و نسخه‌ی متغیر، ثابت یا اعداد فارسی را دانلود کنید.">
+  <title>ویرا | فونت فارسی و لاتین برای رابط کاربری</title>
+  <link rel="preload" href="fonts/web/variable/Vira-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="fonts/web/variable.css">
+  <link rel="stylesheet" href="site/style.css">
+  <script defer src="site/tester.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">رفتن به محتوا</a>
+  <header class="top wrap">
+    <a class="wordmark" href="./" aria-label="ویرا، خانه">ویرا<span aria-hidden="true"></span></a>
+    <nav aria-label="فهرست سایت">
+      <a href="#tester">آزمایش فونت</a>
+      <a href="#comparison">مقایسه</a>
+      <a href="#install">نصب</a>
+      <a href="#download">دانلود</a>
+    </nav>
+  </header>
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="version"><bdi lang="en">Vira 2.2.0</bdi></p>
+        <h1 id="hero-title">ویرا</h1>
+        <p>فونت فارسی و لاتین برای رابط کاربری</p>
+        <div class="hero-actions">
+          <a class="button solid" href="https://github.com/qmahmoudi74/vira/releases/download/v2.2.0/Vira-2.2.0.zip">دانلود بسته‌ی کامل <span aria-hidden="true">↓</span></a>
+          <a class="button outline" href="#tester">فونت را آزمایش کنید</a>
+        </div>
+      </div>
+      <div class="hero-proof" aria-label="نمونه‌ی کاربرد ویرا در پنل فروش">
+        <div class="proof-title">
+          <p>گزارش فروش</p>
+          <bdi lang="en">Sales overview</bdi>
+        </div>
+        <p class="proof-amount"><bdi dir="ltr">۴۸۵٬۰۰۰</bdi> <span>تومان</span></p>
+        <div class="proof-order">
+          <div><strong>اشتراک حرفه‌ای</strong><bdi lang="en">ORDER-248</bdi></div>
+          <span class="state">پرداخت شد</span>
+        </div>
+        <div class="proof-order">
+          <div><strong>سفارش تازه</strong><bdi lang="en">ORDER-259</bdi></div>
+          <span>آماده‌ی ارسال</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="tester" class="section" aria-labelledby="tester-title">
+      <div class="section-heading">
+        <h2 id="tester-title">آزمایش فونت</h2>
+        <p>متن خودتان را بنویسید و اندازه، وزن و شکل اعداد را تغییر دهید.</p>
+      </div>
+      <div class="tester">
+        <div class="tester-controls">
+          <label for="sample">متن نمونه</label>
+          <textarea id="sample" dir="auto" rows="3" maxlength="500">گزارش فروش · Sales Report · 485,000</textarea>
+          <div class="presets" aria-label="متن‌های نمونه">
+            <button type="button" data-example="persian">فارسی</button>
+            <button type="button" data-example="latin">لاتین</button>
+            <button type="button" data-example="mixed">ترکیبی</button>
+          </div>
+          <div class="sliders">
+            <label for="size">اندازه <output id="size-output" for="size">۱۶ پیکسل</output></label>
+            <input id="size" type="range" min="12" max="72" value="16">
+            <label for="weight">وزن <output id="weight-output" for="weight">۴۰۰</output></label>
+            <input id="weight" type="range" min="100" max="900" step="1" value="400">
+          </div>
+          <fieldset>
+            <legend>خانواده‌ی فونت</legend>
+            <label><input type="radio" name="family" value="Vira" checked> ویرا</label>
+            <label><input type="radio" name="family" value="Vira FaNum"> ویرا اعداد فارسی</label>
+          </fieldset>
+          <label class="check"><input id="tabular" type="checkbox"> اعداد هم‌عرض برای جدول</label>
+        </div>
+        <div class="tester-stage">
+          <div class="tester-meta"><span>پیش‌نمایش</span><bdi id="family-output" lang="en">Vira</bdi></div>
+          <p id="render" dir="auto">گزارش فروش · Sales Report · 485,000</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="comparison" class="section" aria-labelledby="comparison-title">
+      <div class="section-heading">
+        <h2 id="comparison-title">ویرا کنار وزیرمتن</h2>
+        <a class="text-link" href="Preview.html">باز کردن مقایسه‌ی کامل <span aria-hidden="true">↖</span></a>
+      </div>
+      <div class="proof-grid">
+        <article class="comparison-card">
+          <h3>ویرا ۲٫۲</h3>
+          <p class="px14">پنجره، همه، مبلغ سفارش · <bdi lang="en">Sales report</bdi></p>
+          <p class="px16">پرداخت انجام شد · <bdi lang="en">ORDER-248</bdi></p>
+        </article>
+        <article class="comparison-card">
+          <h3>وزیرمتن ۳۳٫۰۰۳</h3>
+          <p class="px14 vazir">پنجره، همه، مبلغ سفارش · <bdi lang="en">Sales report</bdi></p>
+          <p class="px16 vazir">پرداخت انجام شد · <bdi lang="en">ORDER-248</bdi></p>
+        </article>
+      </div>
+      <p class="caption">نمونه‌ی اول ۱۴ پیکسل با وزن ۴۰۰ و نمونه‌ی دوم ۱۶ پیکسل با وزن ۶۰۰ است.</p>
+      <div class="changes">
+        <article><h3>فرم‌های فارسی</h3><p>کاسه‌ی «ه» و «م» در چند فرم بازطراحی شده و فاصله‌گذاری متن و رقم‌های فارسی بازبینی شده است.</p></article>
+        <article><h3>رندر اندازه‌های کوچک</h3><p>دستورهای TrueType برای ۱۴ و ۱۶ پیکسل فیزیکی تنظیم شده‌اند. ظاهر متن به نمایشگر و موتور رندر هم بستگی دارد.</p></article>
+        <article><h3>نمایش اعداد</h3><p>ویرا اعداد فارسی، رقم‌های لاتین و عربی را با شکل فارسی نمایش می‌دهد. متن اصلی هنگام کپی ثابت می‌ماند.</p></article>
+      </div>
+    </section>
+
+    <section id="download" class="section download" aria-labelledby="download-title">
+      <div class="section-heading">
+        <h2 id="download-title">دانلود ویرا</h2>
+        <a class="text-link" href="https://github.com/qmahmoudi74/vira/releases/tag/v2.2.0">جزئیات نسخه‌ی <bdi lang="en">2.2.0</bdi></a>
+      </div>
+      <div class="downloads">
+        <a class="download-card featured" href="https://github.com/qmahmoudi74/vira/releases/download/v2.2.0/Vira-2.2.0.zip">
+          <strong>بسته‌ی کامل</strong><span>دسکتاپ، وب، سورس و مقایسه‌ی آفلاین</span><span class="file-type" lang="en">ZIP ↓</span>
+        </a>
+        <a class="download-card" href="https://github.com/qmahmoudi74/vira/releases/download/v2.2.0/Vira-2.2.0-Desktop.zip">
+          <strong>دسکتاپ</strong><span>فایل‌های TTF برای ویندوز، مک و لینوکس</span><span class="file-type" lang="en">TTF ↓</span>
+        </a>
+        <a class="download-card" href="https://github.com/qmahmoudi74/vira/releases/download/v2.2.0/Vira-2.2.0-Web.zip">
+          <strong>وب</strong><span>فایل‌های WOFF2 و CSS آماده</span><span class="file-type" lang="en">WOFF2 ↓</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section install" id="install" aria-labelledby="install-title">
+      <div class="section-heading">
+        <h2 id="install-title">نصب و استفاده</h2>
+        <a class="text-link" href="https://github.com/qmahmoudi74/vira/blob/main/docs/INSTALL.md">راهنمای کامل نصب <span aria-hidden="true">↖</span></a>
+      </div>
+      <div class="install-list">
+        <details open><summary>ویندوز</summary><p>فایل TTF را از بسته‌ی دسکتاپ خارج کنید. روی آن راست‌کلیک کنید و <bdi lang="en">Install</bdi> را بزنید.</p></details>
+        <details><summary>مک</summary><p>فایل TTF را در <bdi lang="en">Font Book</bdi> باز کنید و گزینه‌ی نصب را بزنید.</p></details>
+        <details><summary>لینوکس</summary><p>فایل TTF را در نمایشگر فونت نصب کنید یا آن را در <bdi><code>~/.local/share/fonts</code></bdi> بگذارید و <bdi><code>fc-cache -f</code></bdi> را اجرا کنید.</p></details>
+        <details><summary>وب</summary><p>پوشه‌ی <bdi><code>fonts/web</code></bdi> را کپی کنید. برای فونت متغیر <bdi><code>variable.css</code></bdi> و برای وزن‌های ثابت <bdi><code>static.css</code></bdi> را بارگذاری کنید.</p></details>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap footer">
+    <p>ویرا بر پایه‌ی وزیرمتن اثر صابر راستی‌کردار و مشارکت‌کنندگان پروژه ساخته شده است. حروف لاتین از روبوتو به ارث رسیده‌اند.</p>
+    <nav aria-label="پیوندهای پروژه">
+      <a href="https://github.com/qmahmoudi74/vira"><bdi lang="en">GitHub</bdi></a>
+      <a href="OFL.txt">مجوز فونت</a>
+      <a href="licenses/NOTICE.txt">اعتبار و مجوز روبوتو</a>
+    </nav>
+  </footer>
+</body>
+</html>

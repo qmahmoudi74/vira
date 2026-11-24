@@ -4,7 +4,7 @@
 
 ویرا فونت فارسی و لاتین برای رابط کاربری است که بر پایه‌ی وزیرمتن ساخته شده. در این نسخه هر دو خانواده‌ی «ویرا» و «ویرا اعداد فارسی» به‌صورت متغیر و ثابت برای نصب روی سیستم و استفاده در وب عرضه می‌شوند.
 
-[دانلود آخرین نسخه](https://github.com/qmahmoudi74/vira/releases/latest) · [راهنمای نصب و وب](docs/INSTALL.md) · [تاریخچه‌ی تغییرات](FONTLOG.txt)
+[سایت و آزمایش فونت](https://qmahmoudi74.github.io/vira/) · [دانلود آخرین نسخه](https://github.com/qmahmoudi74/vira/releases/latest) · [راهنمای نصب و وب](docs/INSTALL.md) · [تاریخچه‌ی تغییرات](FONTLOG.txt)
 
 ![نمونه‌ی رابط کاربری و مقایسه‌ی ویرا و وزیرمتن در ۱۴ و ۱۶ پیکسل](docs/assets/vira-specimen.png)
 
