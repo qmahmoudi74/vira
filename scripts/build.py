@@ -1,4 +1,4 @@
-"""Build both Vira families and the standalone comparison from versioned inputs."""
+"""Build both Avand UI families and the standalone comparison from versioned inputs."""
 
 from base64 import b64encode
 from pathlib import Path
@@ -9,7 +9,10 @@ from fontTools.varLib.instancer import instantiateVariableFont
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "2.200"
+RELEASE = "3.0.0"
+VERSION = "3.000"
+FAMILIES = (("Avand UI", "آوند", "AvandUI", False),
+            ("Avand UI FaNum", "آوند اعداد فارسی", "AvandUIFaNum", True))
 WEIGHTS = {
     100: ("Thin", "نازک"),
     200: ("ExtraLight", "بسیار سبک"),
@@ -76,7 +79,7 @@ def build_family(family, family_fa, stem, persian_digits):
     font.importXML(ROOT / "source/Vira.ttx")
     font["head"].fontRevision = float(VERSION)
     description = font["name"].getDebugName(10)
-    note = "Vira 2.2 adds static builds and a Persian-digit family."
+    note = "Avand UI 3.0 was previously published as Vira. The letterforms and spacing are inherited from Vira 2.2."
     if persian_digits:
         for subtable in font["cmap"].tables:
             if subtable.isUnicode():
@@ -111,7 +114,7 @@ def css_rule(family, category, basename, weight):
 
 def build_css():
     web = ROOT / "fonts/web"
-    families = {"Vira": "Vira", "Vira FaNum": "ViraFaNum"}
+    families = {family: stem for family, _, stem, _ in FAMILIES}
     variable = [css_rule(family, "variable", stem + "-Variable", "100 900")
                 for family, stem in families.items()]
     static = [css_rule(family, "static", f"{stem}-{style}", weight)
@@ -126,8 +129,8 @@ def build_preview():
     web = ROOT / "fonts/web/variable"
     template = (specimen / "preview.template.html").read_text(encoding="utf-8")
     files = {
-        "CURRENT": web / "Vira-Variable.woff2",
-        "FANUM": web / "ViraFaNum-Variable.woff2",
+        "CURRENT": web / "AvandUI-Variable.woff2",
+        "FANUM": web / "AvandUIFaNum-Variable.woff2",
         "ORIGINAL": assets / "Vira-2.0.woff2",
         "VAZIRMATN": assets / "Vazirmatn-33.003.woff2",
     }
@@ -141,7 +144,7 @@ def build_preview():
 
 
 if __name__ == "__main__":
-    build_family("Vira", "ویرا", "Vira", False)
-    build_family("Vira FaNum", "ویرا اعداد فارسی", "ViraFaNum", True)
+    for family in FAMILIES:
+        build_family(*family)
     build_css()
     build_preview()

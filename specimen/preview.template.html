@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>مقایسه‌ی ویرا ۲٫۲</title>
+  <title>مقایسه‌ی آوند ۳٫۰</title>
   <style>
-    @font-face{font-family:ViraCurrent;src:url(data:font/woff2;base64,@CURRENT@) format("woff2");font-weight:100 900;ascent-override:89.84375%;descent-override:41.796875%;line-gap-override:0%}
-    @font-face{font-family:ViraFaNum;src:url(data:font/woff2;base64,@FANUM@) format("woff2");font-weight:100 900;ascent-override:89.84375%;descent-override:41.796875%;line-gap-override:0%}
+    @font-face{font-family:AvandCurrent;src:url(data:font/woff2;base64,@CURRENT@) format("woff2");font-weight:100 900;ascent-override:89.84375%;descent-override:41.796875%;line-gap-override:0%}
+    @font-face{font-family:AvandFaNum;src:url(data:font/woff2;base64,@FANUM@) format("woff2");font-weight:100 900;ascent-override:89.84375%;descent-override:41.796875%;line-gap-override:0%}
     @font-face{font-family:ViraOriginal;src:url(data:font/woff2;base64,@ORIGINAL@) format("woff2");font-weight:100 900;ascent-override:89.84375%;descent-override:41.796875%;line-gap-override:0%}
     @font-face{font-family:VazirmatnComparison;src:url(data:font/woff2;base64,@VAZIRMATN@) format("woff2");font-weight:100 900;ascent-override:89.84375%;descent-override:41.796875%;line-gap-override:0%}
     @font-face{font-family:SegoeComparison;src:local("Segoe UI"),local("SegoeUI");font-weight:400;ascent-override:89.84375%;descent-override:41.796875%;line-gap-override:0%}
@@ -19,7 +19,7 @@
     @font-face{font-family:CalibriComparison;src:local("Calibri Bold"),local("Calibri-Bold");font-weight:700;ascent-override:89.84375%;descent-override:41.796875%;line-gap-override:0%}
     :root{color-scheme:light;color:#151515;background:#fff;--rule:#d4d4d4;--muted:#525252}
     *{box-sizing:border-box}
-    body{margin:0;font:400 15px/1.65 ViraCurrent,system-ui,sans-serif}
+    body{margin:0;font:400 15px/1.65 AvandCurrent,system-ui,sans-serif}
     main{--size:14px;--weight:400;--line:calc(var(--size)*1.72);width:min(100% - 24px,1260px);margin:auto;padding:clamp(20px,3vw,40px) 0}
     h1,p{margin:0}h1{font-size:clamp(28px,4vw,43px);line-height:1.25;font-weight:720}
     .intro,.notice{color:var(--muted);margin-block:6px 15px}
@@ -42,7 +42,7 @@
     .header p,.header button{font-size:13px}
     .reference-status{color:var(--muted);overflow-wrap:anywhere;margin-block:5px}
     .file-actions{display:flex;flex-wrap:wrap;gap:5px}
-    .current{--font:ViraCurrent}
+    .current{--font:AvandCurrent}
     .sample{font:var(--sample-weight,var(--weight)) var(--size)/var(--line) var(--font),system-ui,sans-serif;font-synthesis:none;overflow-wrap:anywhere}
     .sample bdi{font:inherit}
     .custom{white-space:pre-wrap}
@@ -57,7 +57,7 @@
 </head>
 <body>
 <main id="page">
-  <h1>مقایسه‌ی ویرا ۲٫۲</h1>
+  <h1>مقایسه‌ی آوند ۳٫۰</h1>
   <p class="intro">برای مقایسه زوم مرورگر را روی ۱۰۰٪ بگذارید.</p>
   <section class="controls" aria-label="تنظیمات مقایسه">
     <label>اندازه <select id="size"><option value="14" selected>۱۴ پیکسل</option><option value="16">۱۶ پیکسل</option></select></label>
@@ -70,14 +70,14 @@
   <div class="comparison" id="comparison" role="region" aria-label="نمونه‌های مقایسه‌ی فونت" tabindex="0">
     <div id="proof" role="table" aria-label="مقایسه‌ی پنج فونت">
       <div class="row header" role="row">
-        <div role="columnheader">ویرا ۲٫۲</div>
+        <div role="columnheader">آوند ۳٫۰</div>
       </div>
     </div>
   </div>
   <input id="font-file" type="file" accept=".woff2,.woff,.ttf,.otf" hidden>
   <details>
     <summary>رندر ثبت‌شده با ClearType در ویندوز</summary>
-    <p class="notice">تصویر در اندازه‌ی ثبت‌شده نمایش داده می‌شود. در پنجره‌ی باریک می‌توانید تصویر را افقی پیمایش کنید.</p>
+    <p class="notice">آوند تنظیم‌های رندر ویرا ۲٫۱ را حفظ کرده است. تصویر همان آزمایش را در اندازه‌ی ثبت‌شده نشان می‌دهد. در پنجره‌ی باریک می‌توانید تصویر را افقی پیمایش کنید.</p>
     <div class="capture"><img id="capture" width="1164" height="220" alt="رندر آزمایش در ویندوز. از چپ Segoe UI، ویرا ۲٫۰ و ویرا ۲٫۱."></div>
   </details>
 </main>
@@ -121,7 +121,7 @@
   const fileInput = document.getElementById("font-file");
   const choices = {
     VazirmatnComparison:{name:"وزیرمتن"},
-    ViraFaNum:{name:"ویرا اعداد فارسی"},
+    AvandFaNum:{name:"آوند اعداد فارسی"},
     IranSans:{name:"ایران‌سنس",local:{
       variable:["IRANSansXVF-ThinUIFixed","IRANSansXVF Thin UI Fixed","IRANSansXVF UI Fixed","IRANSansXVF","IRANSansXV","IRANSansXV-Thin"],
       400:["IRANSansX-Regular","IRANSansX Regular","IRANSans-Regular","IRANSans Regular","IRANSans"],

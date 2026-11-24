@@ -1,8 +1,10 @@
 <div dir="rtl">
 
-# نصب و استفاده از ویرا
+# نصب و استفاده از آوند
 
-فایل ZIP را خارج کنید. برای هر خانواده، فایل متغیر یا وزن‌های ثابت را نصب کنید. نصب هم‌زمان این دو نوع برای یک خانواده می‌تواند در فهرست فونت بعضی برنامه‌ها ورودی تکراری ایجاد کند. `Vira` و `Vira FaNum` دو خانواده‌ی جدا هستند.
+فایل ZIP را خارج کنید. برای هر خانواده، فایل متغیر یا وزن‌های ثابت را نصب کنید. نصب هم‌زمان این دو نوع برای یک خانواده می‌تواند در فهرست فونت بعضی برنامه‌ها ورودی تکراری ایجاد کند. `Avand UI` و `Avand UI FaNum` دو خانواده‌ی جدا هستند.
+
+اگر پروژه از نسخه‌ی ویرا استفاده می‌کند، برای مهاجرت به آوند فایل‌های فونت و CSS را جایگزین کنید و نام خانواده را در استایل‌ها از `Vira` به `Avand UI` یا از `Vira FaNum` به `Avand UI FaNum` تغییر دهید.
 
 ## ویندوز
 
@@ -19,16 +21,16 @@
 </div>
 
 ```sh
-vira_fonts="${XDG_DATA_HOME:-$HOME/.local/share}/fonts/vira"
-mkdir -p "$vira_fonts"
-cp fonts/variable/Vira-Variable.ttf "$vira_fonts/"
-fc-cache -f "$vira_fonts"
-fc-match Vira
+avand_fonts="${XDG_DATA_HOME:-$HOME/.local/share}/fonts/avand"
+mkdir -p "$avand_fonts"
+cp fonts/variable/AvandUI-Variable.ttf "$avand_fonts/"
+fc-cache -f "$avand_fonts"
+fc-match "Avand UI"
 ```
 
 <div dir="rtl">
 
-برای خانواده‌ی  اعداد فارسی، `ViraFaNum-Variable.ttf` را هم کپی کنید. برای نسخه‌ی ثابت فایل‌های دلخواه خانواده را از `fonts/static` بردارید.
+برای خانواده‌ی اعداد فارسی، `AvandUIFaNum-Variable.ttf` را هم کپی کنید. برای نسخه‌ی ثابت فایل‌های دلخواه خانواده را از `fonts/static` بردارید.
 
 ## وب
 
@@ -42,8 +44,8 @@ fc-match Vira
     <meta charset="utf-8">
     <link rel="stylesheet" href="/fonts/web/variable.css">
     <style>
-      body { font-family: "Vira", sans-serif; }
-      .amount { font-family: "Vira FaNum", sans-serif; }
+      body { font-family: "Avand UI", sans-serif; }
+      .amount { font-family: "Avand UI FaNum", sans-serif; }
       .tabular { font-variant-numeric: tabular-nums; }
     </style>
   </head>

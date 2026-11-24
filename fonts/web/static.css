@@ -1,142 +1,142 @@
 @font-face {
-  font-family: "Vira";
-  src: url("static/Vira-Thin.woff2") format("woff2");
+  font-family: "Avand UI";
+  src: url("static/AvandUI-Thin.woff2") format("woff2");
   font-style: normal;
   font-weight: 100;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Vira";
-  src: url("static/Vira-ExtraLight.woff2") format("woff2");
+  font-family: "Avand UI";
+  src: url("static/AvandUI-ExtraLight.woff2") format("woff2");
   font-style: normal;
   font-weight: 200;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Vira";
-  src: url("static/Vira-Light.woff2") format("woff2");
+  font-family: "Avand UI";
+  src: url("static/AvandUI-Light.woff2") format("woff2");
   font-style: normal;
   font-weight: 300;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Vira";
-  src: url("static/Vira-Regular.woff2") format("woff2");
+  font-family: "Avand UI";
+  src: url("static/AvandUI-Regular.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Vira";
-  src: url("static/Vira-Medium.woff2") format("woff2");
+  font-family: "Avand UI";
+  src: url("static/AvandUI-Medium.woff2") format("woff2");
   font-style: normal;
   font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Vira";
-  src: url("static/Vira-SemiBold.woff2") format("woff2");
+  font-family: "Avand UI";
+  src: url("static/AvandUI-SemiBold.woff2") format("woff2");
   font-style: normal;
   font-weight: 600;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Vira";
-  src: url("static/Vira-Bold.woff2") format("woff2");
+  font-family: "Avand UI";
+  src: url("static/AvandUI-Bold.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Vira";
-  src: url("static/Vira-ExtraBold.woff2") format("woff2");
+  font-family: "Avand UI";
+  src: url("static/AvandUI-ExtraBold.woff2") format("woff2");
   font-style: normal;
   font-weight: 800;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Vira";
-  src: url("static/Vira-Black.woff2") format("woff2");
+  font-family: "Avand UI";
+  src: url("static/AvandUI-Black.woff2") format("woff2");
   font-style: normal;
   font-weight: 900;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Vira FaNum";
-  src: url("static/ViraFaNum-Thin.woff2") format("woff2");
+  font-family: "Avand UI FaNum";
+  src: url("static/AvandUIFaNum-Thin.woff2") format("woff2");
   font-style: normal;
   font-weight: 100;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Vira FaNum";
-  src: url("static/ViraFaNum-ExtraLight.woff2") format("woff2");
+  font-family: "Avand UI FaNum";
+  src: url("static/AvandUIFaNum-ExtraLight.woff2") format("woff2");
   font-style: normal;
   font-weight: 200;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Vira FaNum";
-  src: url("static/ViraFaNum-Light.woff2") format("woff2");
+  font-family: "Avand UI FaNum";
+  src: url("static/AvandUIFaNum-Light.woff2") format("woff2");
   font-style: normal;
   font-weight: 300;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Vira FaNum";
-  src: url("static/ViraFaNum-Regular.woff2") format("woff2");
+  font-family: "Avand UI FaNum";
+  src: url("static/AvandUIFaNum-Regular.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Vira FaNum";
-  src: url("static/ViraFaNum-Medium.woff2") format("woff2");
+  font-family: "Avand UI FaNum";
+  src: url("static/AvandUIFaNum-Medium.woff2") format("woff2");
   font-style: normal;
   font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Vira FaNum";
-  src: url("static/ViraFaNum-SemiBold.woff2") format("woff2");
+  font-family: "Avand UI FaNum";
+  src: url("static/AvandUIFaNum-SemiBold.woff2") format("woff2");
   font-style: normal;
   font-weight: 600;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Vira FaNum";
-  src: url("static/ViraFaNum-Bold.woff2") format("woff2");
+  font-family: "Avand UI FaNum";
+  src: url("static/AvandUIFaNum-Bold.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Vira FaNum";
-  src: url("static/ViraFaNum-ExtraBold.woff2") format("woff2");
+  font-family: "Avand UI FaNum";
+  src: url("static/AvandUIFaNum-ExtraBold.woff2") format("woff2");
   font-style: normal;
   font-weight: 800;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Vira FaNum";
-  src: url("static/ViraFaNum-Black.woff2") format("woff2");
+  font-family: "Avand UI FaNum";
+  src: url("static/AvandUIFaNum-Black.woff2") format("woff2");
   font-style: normal;
   font-weight: 900;
   font-display: swap;

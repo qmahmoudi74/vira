@@ -5,10 +5,10 @@ from hashlib import sha256
 from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
 
-from build import ROOT
+from build import RELEASE, ROOT
 
 
-ASSET_STEM = "Vira-2.2.0"
+ASSET_STEM = f"Avand-{RELEASE}"
 COMMON = ("OFL.txt", "FONTLOG.txt", "licenses/NOTICE.txt", "licenses/Roboto-Apache-2.0.txt", "docs/INSTALL.md")
 
 

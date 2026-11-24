@@ -1,7 +1,11 @@
-Vira font log
+Avand UI font log
 
-Vira is a modified version of Vazirmatn 33.003 by Saber Rastikerdar and
+Avand UI (formerly Vira) is a modified version of Vazirmatn 33.003 by Saber Rastikerdar and
 the Vazirmatn project authors. See OFL.txt and licenses/NOTICE.txt.
+
+3.0.0
+- Renamed the installed families to Avand UI and Avand UI FaNum.
+- Retained the Vira 2.2.0 outlines, spacing, shaping and hinting.
 
 2.2.0
 - Released nine static weights per family, from 100 to 900.

@@ -7,7 +7,7 @@ import re
 from fontTools.ttLib import TTFont
 import uharfbuzz as hb
 
-from build import ROOT, VERSION, WEIGHTS
+from build import FAMILIES, ROOT, VERSION, WEIGHTS
 
 
 def shaping_font(path, weight=None):
@@ -99,7 +99,7 @@ def check_css():
 
 
 if __name__ == "__main__":
-    check_family("Vira", "Vira", False)
-    check_family("Vira FaNum", "ViraFaNum", True)
+    for family, _, stem, persian_digits in FAMILIES:
+        check_family(family, stem, persian_digits)
     check_css()
     print("Validated all 40 font binaries, Persian digits, static/variable shaping and CSS links.")

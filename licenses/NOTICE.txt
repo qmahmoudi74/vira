@@ -1,4 +1,4 @@
-Vira 2.2.0 redistributes a modified version of Vazirmatn 33.003.
+Avand UI 3.0 (formerly Vira) redistributes a modified version of Vazirmatn 33.003.
 
 Vazirmatn
 Copyright 2015 The Vazirmatn Project Authors
@@ -9,7 +9,7 @@ License: SIL Open Font License 1.1 (see ../OFL.txt).
 Roboto Variable 3.004
 The Latin glyphs and related data descend from Roboto Variable through
 Vazirmatn. Google LLC is listed as the upstream copyright author.
-Roboto data are included in the modified Vira font files.
+Roboto data are included in the modified Avand UI font files.
 Upstream: https://github.com/googlefonts/roboto-3-classic/tree/v3.004
 License: Apache License 2.0 (see Roboto-Apache-2.0.txt).
 
@@ -17,4 +17,4 @@ Specimen
 The specimen also bundles the unmodified Vazirmatn 33.003 comparison font
 and a historical Vira 2.0 build. Their notices and licenses are listed above.
 The installed and file-selected commercial reference fonts are supplied
-by the reader's system. See FONTLOG.txt for changes to the Vira family.
+by the reader's system. See FONTLOG.txt for changes to the Avand UI family.
